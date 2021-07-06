@@ -1,0 +1,72 @@
+.ro-text-content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.0em;
+}
+
+.ro-text-logo {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.5em;
+}
+
+.ro-text-header {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2.0em;
+}
+
+.ro-background-red {
+  background-color: crimson;
+}
+
+.ro-background-darksecondary {
+  background-color: #191919;
+}
+
+.ro-logocolor {
+  color: white;
+}
+
+.ro-footer {
+  flex: 1;
+}
+
+/*uh oh? -lubos added this*/
+.uk-container-large {
+  max-width: 1200px;
+}
+
+.uk-card-default {
+  background: none;
+}
+
+.card-img {
+  max-height: 80px;
+  margin: 10px;
+}
+
+.card-header {
+  margin: 10px;
+}
+
+.card-text {
+  margin: 10px;
+}
+
+.alt-links {
+  margin-top: -10px;
+  font-size: 0.85rem;
+}
+
+.locale-flags {
+  position: absolute;
+  display: flex;
+}
+
+.locale-flag {
+  margin: 5px 10px;
+  text-decoration: none !important;
+  font-size: 1.5rem;
+}
+
+.footer-link {
+  color: #666 !important;
+}

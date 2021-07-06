@@ -1,0 +1,45 @@
+<!-- Disappearing Header -->
+<div class="uk-section uk-section-secondary uk-padding-remove" style="z-index: -1;" uk-sticky="bottom: #offset">
+    <div class="uk-cover-container uk-height-large uk-text-center">
+        <img src="img/banner-2.jpg" alt="Cover Image" uk-cover>
+    </div>
+</div>
+
+<!-- Navigation -->
+<div class="uk-section uk-padding-remove">
+    <!-- large screen nav -->
+    <div class="uk-visible@l"
+        uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+        <div class="uk-background-secondary uk-light">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav uk-text-capitalize">
+                        <li><a class="translatable navNews" href="index.html"></a></li>
+                        <li><a class="translatable navDiscography" href="/"></a></li>
+                        <li><a class="translatable navAbout" href="/"></a></li>
+                        <li><a class="translatable navContact" href="/"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- mobile nav-->
+    <div class="uk-background-secondary uk-light uk-hidden@l uk-position-fixed uk-position-bottom-left uk-width-1-1"
+        style="z-index: 980; border:0;" uk-sticky-fixed>
+        <button class="uk-button uk-button-default uk-width-1-1" style="border:0;" type="button"
+            uk-toggle="target: #offcanvas-slide">
+            <span uk-icon="icon: menu"></span> MENU</button>
+    </div>
+    <div id="offcanvas-slide" uk-offcanvas="bg-close: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-default">
+                <li><a class="translatable navNews" href="index.html"></a></li>
+                <li><a class="translatable navDiscography" href="/"></a></li>
+                <li><a class="translatable navAbout" href="/"></a></li>
+                <li><a class="translatable navContact" href="/"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
