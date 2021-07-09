@@ -1,0 +1,101 @@
+body {
+    background: $color-base-1;
+    min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// Home
+.lang-select {
+    display: flex;
+    min-height: 200px;
+    margin: auto;
+    
+    div {
+        padding: 6% 0%;
+        opacity: 1.0;
+    }
+    
+    div:hover {
+        opacity: 0.8;
+    }
+    
+    .lang-pt {
+        margin-left: auto;
+        padding-right: 5vw;
+    }
+    
+    .lang-en {
+        margin-right: auto;
+    }
+}
+
+.social-icon {
+    color: $color-text-1;
+}
+
+.banner {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url("/assets/img/banner-1.jpg");
+}
+    
+.banner-mobile {
+    min-height: $banner-height-mobile;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/assets/img/banner-2.jpg");
+}
+    
+.banner-desktop {
+    min-height: $banner-height-desktop;
+    background-size: cover;
+    background-position: top;
+    height: 50%;
+}
+
+.default-content {
+    padding: 20px 20px;
+}
+
+.home-body {
+    background-image: url("/assets/img/tile-1.jpg");
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.home-content {
+    margin-top: auto;
+    padding-top: 50px;
+}
+
+.footer {
+    margin-top: auto;
+    
+    strong {
+        color: $color-text-2;
+    }
+
+    a {
+        color: $color-link;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+    
+    i {
+        font-size: 1.5rem;
+    }
+}
+
+.content {
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: $color-text-2;
+    }
+}

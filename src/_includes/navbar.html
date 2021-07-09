@@ -1,0 +1,44 @@
+{% assign curLang = site.data.locale[page.lang] %}
+
+<nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img src="/assets/img/logo-2.png" width="112" height="28">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item lc navNews" href="/content/news/">{{ curLang.navNews }}</a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link lc navInfo">{{ curLang.navInfo }}</a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item lc navBand">{{ curLang.navBand }}</a>
+                    <a class="navbar-item lc navDiscography">{{ curLang.navDiscography }}</a>
+                </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link lc navMedia">{{ curLang.navMedia }}</a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item lc navLyrics">{{ curLang.navLyrics }}</a>
+                    <a class="navbar-item lc navPictures">{{ curLang.navPictures }}</a>
+                    <a class="navbar-item lc navAudio">{{ curLang.navAudio }}</a>
+                    <a class="navbar-item lc navTabs">{{ curLang.navTabs }}</a>
+                </div>
+            </div>
+
+            <a class="navbar-item lc navContact">{{ curLang.navContact }}</a>
+
+        </div>
+    </div>
+</nav>

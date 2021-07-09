@@ -1,0 +1,38 @@
+---
+title: Home
+---
+
+{% include head.html %}
+
+<body class="home-body">
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="/assets/img/logo-2.png" width="112" height="28">
+            </a>
+        </div>
+    </nav>
+    <div class="home-content">
+        <div>
+            <div class="lang-select">
+                <div class="lang-pt">
+                    <figure class="image is-128x128">
+                        <a href="/content/news/pt">
+                            <img src="/assets/img/flag-portuguese.png">
+                        </a>
+                    </figure>
+                </div>
+                <div class="lang-en">
+                    <figure class="image is-128x128">
+                        <a href="/content/news/en">
+                            <img src="/assets/img/flag-english.png">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+
+</html>

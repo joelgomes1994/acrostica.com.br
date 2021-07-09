@@ -1,0 +1,13 @@
+// Theme variables
+$color-base-1: #141414;
+$color-base-2: #2c2c2c;
+$color-text-1: #ffffff;
+$color-text-2: #c7c7c7;
+$color-link: #ff2b2b;
+$banner-height-desktop: 300px;
+$banner-height-mobile: 250px;
+$banner-margin-top: 50px;
+
+@import "bulma_vars";
+@import "bulma/bulma";
+@import "styles";
