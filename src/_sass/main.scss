@@ -9,5 +9,5 @@ $banner-height-mobile: 250px;
 $banner-margin-top: 50px;
 
 @import "bulma_vars";
-@import "bulma/bulma";
+@import "../../node_modules/bulma/bulma";
 @import "styles";
