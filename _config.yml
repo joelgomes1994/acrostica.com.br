@@ -1,5 +1,5 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "Acróstica" # the name of your site, e.g. ACME Corp.
+url: "https://acrostica.com.br/"
+baseurl: ""
+title: "Acróstica"
 source: "./src"
 destination: "./docs"
