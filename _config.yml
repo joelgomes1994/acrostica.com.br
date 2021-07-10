@@ -1,4 +1,5 @@
-url: "https://acrostica.com.br/"
+domain: "acrostica.com.br"
+url: "https://acrostica.com.br"
 baseurl: ""
 title: "Acróstica"
 source: "./src"
