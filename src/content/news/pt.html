@@ -2,11 +2,7 @@
 layout: default
 title: Notícias
 lang: pt
+date_format: "%d/%m/%Y"
 ---
 
-{% assign curLang = site.data.locale[page.lang] %}
-
-<div>
-    <h1>{{ curLang.navNews }}</h1>
-    <p>{{ curLang.txtConstruction }}</p>
-</div>
+{% include news.html %}

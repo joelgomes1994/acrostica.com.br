@@ -1,0 +1,43 @@
+{% assign curLang = site.data.locale[page.lang] %}
+
+<div>
+    <h1>{{ curLang.navNews }}</h1>
+
+    {% assign curLangPosts = site.posts | where: "lang", page.lang %}
+
+    {% for post in curLangPosts limit:10 %}
+
+    {% assign banner = "/assets/img/" %}
+    {% if post.banner %}
+    {% assign banner = banner | append: post.banner %}
+    {% else %}
+    {% assign banner = banner | append: "banner-news-default.jpg" %}
+    {% endif %}
+
+    <div class="news-card">
+        <div class="news-card-image is-hidden-mobile">
+            <a href="{{ post.url }}">
+
+                <img src="{{ banner }}">
+            </a>
+        </div>
+        <div style="margin-left: 20px;" class="is-hidden-mobile"></div>
+        <div class="news-card-content">
+            <a href="{{ post.url }}">
+                <h2 class="news-card-title">{{ post.title }}</h2>
+            </a>
+            <p class="news-card-excerpt">
+                {{ post.excerpt }}
+            </p>
+            <div class="news-card-date">{{ curLang.newsDate }} {{ post.date | date: page.date_format }}</div>
+        </div>
+    </div>
+
+    {% endfor %}
+
+    <a href="">
+        <div class="news-card">
+            <h6 class="text-center m-auto">{{ curLang.newsOlder }}</>
+        </div>
+    </a>
+</div>

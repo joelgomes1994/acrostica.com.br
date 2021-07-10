@@ -10,6 +10,8 @@ pt:
     navTabs: "Tablaturas"
     navContact: "Contato "
     txtConstruction: "Em construção..."
+    newsDate: "Data:"
+    newsOlder: "Notícias anteriores"
 en:
     navNews: "News"
     navInfo: "Info"
@@ -22,3 +24,5 @@ en:
     navTabs: "Tabs"
     navContact: "Contact"
     txtConstruction: "Under construction..."
+    newsDate: "Date:"
+    newsOlder: "Older news"

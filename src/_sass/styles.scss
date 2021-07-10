@@ -7,6 +7,15 @@ body {
 	flex-direction: column;
 }
 
+a {
+    color: $color-link;
+}
+
+a:hover {
+    color: rgba($color: $color-link, $alpha: 0.7);
+    opacity: 0.7;
+}
+
 .text-center {
     text-align: center;
 }
@@ -15,6 +24,7 @@ body {
     
     h1, h2, h3, h4, h5, h6 {
         color: $color-text-2;
+        text-transform: capitalize;
     }
 }
 
@@ -64,10 +74,6 @@ body {
         color: $color-text-2;
     }
 
-    a {
-        color: $color-link;
-    }
-
     p {
         font-size: 0.7rem;
     }
@@ -105,4 +111,53 @@ body {
 
 .default-content {
     padding: 20px 20px;
+}
+
+
+// News
+.news-card {
+    background-color: $color-base-2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    
+    div:hover {
+        opacity: 0.7;
+    }
+    
+    .news-card-image {
+        height: 200px;
+        max-width: 200px;
+        min-width: 200px;
+        margin: auto;
+    
+        img {
+            object-fit: cover;
+            min-height: 100%;
+        }
+    }
+    
+    .news-card-content {
+        color: $color-text-1;
+        
+        .news-card-date {
+            color: $color-text-3;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.news-post-img {
+    object-fit: cover;
+    max-height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .news-post-img {
+        max-height: 200px;
+    }
 }
