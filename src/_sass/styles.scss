@@ -1,6 +1,8 @@
+// Global
 body {
     background: $color-base-1;
     min-height: 100vh;
+    min-width: 370px;
 	display: flex;
 	flex-direction: column;
 }
@@ -8,6 +10,14 @@ body {
 .text-center {
     text-align: center;
 }
+
+.content {
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: $color-text-2;
+    }
+}
+
 
 // Home
 .lang-select {
@@ -34,34 +44,6 @@ body {
     }
 }
 
-.social-icon {
-    color: $color-text-1;
-}
-
-.banner {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-image: url("/assets/img/banner-1.jpg");
-}
-    
-.banner-mobile {
-    min-height: $banner-height-mobile;
-    background-size: cover;
-    background-position: center;
-    background-image: url("/assets/img/banner-2.jpg");
-}
-    
-.banner-desktop {
-    min-height: $banner-height-desktop;
-    background-size: cover;
-    background-position: top;
-    height: 50%;
-}
-
-.default-content {
-    padding: 20px 20px;
-}
-
 .home-body {
     background-image: url("/assets/img/tile-1.jpg");
     background-repeat: repeat;
@@ -73,6 +55,8 @@ body {
     padding-top: 50px;
 }
 
+
+// Footer
 .footer {
     margin-top: auto;
     
@@ -93,9 +77,32 @@ body {
     }
 }
 
-.content {
-    
-    h1, h2, h3, h4, h5, h6 {
-        color: $color-text-2;
-    }
+.social-icon {
+    color: $color-text-1;
+}
+
+
+// Header
+.banner {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url("/assets/img/banner-1.jpg");
+}
+
+.banner-desktop {
+    min-height: 500px;
+    background-size: cover;
+    background-position: top;
+    height: 50%;
+}
+
+.banner-mobile {
+    min-height: 230px;
+    background-size: contain;
+    background-position: top;
+    background-position-y: 25px;
+}
+
+.default-content {
+    padding: 20px 20px;
 }
