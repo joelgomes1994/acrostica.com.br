@@ -2,3 +2,4 @@
 .jekyll-metadata
 *.map
 node_modules
+/public
