@@ -1,0 +1,25 @@
+{% assign curLang = site.data.locale[page.lang] %}
+
+<div>
+    <h1>{{ curLang.navLyrics }}</h1>
+    
+    {% for album in site.data.lyrics %}
+        <h2>{{ album.album_title }}</h2>
+        <div class="columns is-desktop is-multiline">
+        
+            {% for lyrics in album.lyrics %}
+                <div x-data="{ visible: false }" class="column is-half-desktop is-one-third-fullhd">
+                    <article class="message">
+                        <div x-on:click="visible = !visible" class="message-header clickable mb-0">
+                            {{ lyrics.title }}
+                            <i x-bind:class="visible ? 'fa-angle-up' : 'fa-angle-down'" class="fas"></i>
+                        </div>
+                        <div x-bind:class="!visible ? 'is-hidden' : ''" class="message-body">
+                            {{ lyrics.content | strip | newline_to_br }}
+                        </div>
+                    </article>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>

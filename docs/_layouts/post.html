@@ -1,7 +1,9 @@
 ---
 layout: default
+date_format: "%m/%d/%Y"
 ---
 
+{% assign curLang = site.data.locale[page.lang] %}
 {% assign banner = "/assets/img/" %}
 {% if page.banner %}
 {% assign banner = banner | append: page.banner %}
@@ -9,7 +11,11 @@ layout: default
 {% assign banner = banner | append: "banner-news-default.jpg" %}
 {% endif %}
 
-<h1>{{ page.title}}</h1>
-<img class="news-post-img" src="{{ banner }}">
-
-{{ content }}
+<div class="post">
+    <h1 class="post-title">{{ page.title}}</h1>
+    <div class="post-date has-text-right">{{ curLang.newsDate }} {{ page.date | date: layout.date_format }}</div>
+    <img class="post-banner mt-4" src="{{ banner }}">
+    <div class="post-content mt-5">
+        {{ content }}
+    </div>
+</div>

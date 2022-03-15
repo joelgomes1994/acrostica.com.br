@@ -149,19 +149,37 @@ a:hover {
     }
 }
 
-.news-button-older {
-    margin-top: 20px !important;
+.clickable {
+    cursor: pointer;
 }
 
-.news-post-img {
-    object-fit: cover;
-    max-height: 400px;
-    width: 100%;
-    margin-bottom: 20px;
+.news-button-older {
+    margin-top: 20px !important;
 }
 
 @media only screen and (max-width: 600px) {
     .news-post-img {
         max-height: 200px;
+    }
+}
+
+.post {
+    padding: 0.5rem;
+    
+    .post-title {
+        margin: 0px;
+    }
+    
+    .post-banner {
+        object-fit: cover;
+        max-height: 400px;
+        width: 100%;
+        border-radius: 1rem;
+    }
+    
+    .post-date {
+        color: $color-text-3;
+        font-size: 0.9rem;
+        font-weight: bold;
     }
 }
