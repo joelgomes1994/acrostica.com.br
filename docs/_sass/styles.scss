@@ -163,6 +163,12 @@ a:hover {
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .default-content {
+        padding: 20px 100px;
+    }
+}
+
 .post {
     padding: 0.5rem;
     
@@ -181,5 +187,12 @@ a:hover {
         color: $color-text-3;
         font-size: 0.9rem;
         font-weight: bold;
+    }
+    
+    .post-content {
+        background: #1e1e1e;
+        padding: 20px;
+        color: white;
+        border-radius: 1rem;
     }
 }

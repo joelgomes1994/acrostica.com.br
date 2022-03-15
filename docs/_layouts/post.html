@@ -12,9 +12,9 @@ date_format: "%m/%d/%Y"
 {% endif %}
 
 <div class="post">
-    <h1 class="post-title">{{ page.title}}</h1>
     <div class="post-date has-text-right">{{ curLang.newsDate }} {{ page.date | date: layout.date_format }}</div>
     <img class="post-banner mt-4" src="{{ banner }}">
+    <h1 class="post-title">{{ page.title}}</h1>
     <div class="post-content mt-5">
         {{ content }}
     </div>
