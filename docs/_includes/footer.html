@@ -1,8 +1,15 @@
 <footer class="footer">
-    <div class="content has-text-centered">
+    <div class="has-text-centered">
         <p>
-            Copyright ©2014 - {{ 'now' | date: "%Y" }}, Acróstica, ALL RIGHTS RESERVED. Developed and maintained by
+            Copyright ©2014 - <span id="currentYear">{{ 'now' | date: "%Y" }}</span>, Acróstica, ALL RIGHTS RESERVED.
+            Developed and maintained by
             <a href="https://www.instagram.com/acrosticaofficial" target="_blank">Acróstica</a>.
         </p>
     </div>
+    <script>
+        // Set current year to footer
+        const currentYear = (new Date(Date.now())).getFullYear();
+        const yearElement = document.getElementById('currentYear');
+        yearElement.innerHTML = currentYear;
+    </script>
 </footer>
