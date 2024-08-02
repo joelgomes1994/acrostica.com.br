@@ -4,8 +4,8 @@ $mobileBreakpoint: 768px;
 body {
     background: $color-base-1;
     min-height: 100vh;
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
     user-select: none;
 }
 
@@ -42,6 +42,21 @@ a:hover {
     background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;
+    animation: background-scroll 60s linear infinite;
+}
+
+@keyframes background-scroll {
+    0% {
+        background-position: 0px 0px
+    }
+
+    50% {
+        background-position: -200vw 0px
+    }
+
+    100% {
+        background-position: 0px 0px
+    }
 }
 
 .home-content {
